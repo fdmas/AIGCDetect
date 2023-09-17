@@ -112,6 +112,7 @@
 			<li id="tab1" class="li current"><span>distortion-free</span></li>
 			<li id="tab2" class="li"><span>QF-95</span></li>
       <li id="tab3" class="li"><span>Blur-1.5</span></li>
+      <li id="tab4" class="li"><span>Resize-0.5</span></li>
 		</ul>
 	</div>
   <div class="data-container" id="data_container1"></div>
@@ -129,11 +130,20 @@
       <div id="chart2_rank" style="width:400px;height:400px;"></div>
     </div>
   </div>
+
   <div class="data-container" id="data_container3"></div>
     <button id="selectall3" class="button button2" flag="0" style="top: 90px; left: 10; width: 100px; height: 30px;">show all</button>
     <div class="chart-container" id="chart_container3">
       <div id="chart3" style="width:1500px;height:1000px;"></div>
       <div id="chart3_rank" style="width:400px;height:400px;"></div>
+    </div>
+  </div>
+
+  <div class="data-container" id="data_container4"></div>
+    <button id="selectall4" class="button button2" flag="0" style="top: 90px; left: 10; width: 100px; height: 30px;">show all</button>
+    <div class="chart-container" id="chart_container4">
+      <div id="chart4" style="width: 1500px;height:1000px;"></div>
+      <div id="chart4_rank" style="width:400px;height:400px;"></div>
     </div>
   </div>
 
@@ -143,7 +153,7 @@
     <tr>
         <th>method-></th>
         <th colspan="2">CNNSpot<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_CNN-Generated_Images_Are_Surprisingly_Easy_to_Spot..._for_Now_CVPR_2020_paper.html">[1]</a></th>
-        <th colspan="2">DCT<a href="">[2]</a></th>
+        <th colspan="2">DCT<a href="http://proceedings.mlr.press/v119/frank20a">[2]</a></th>
         <th colspan="2">Fusing<a href="https://ieeexplore.ieee.org/abstract/document/9897820">[3]</a></th>
         <th colspan="2">Gram<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Liu_Global_Texture_Enhancement_for_Fake_Face_Detection_in_the_Wild_CVPR_2020_paper.html">[4]</a></th>
         <th colspan="2">Grad<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.html">[5]</a></th>
@@ -501,7 +511,7 @@
     <tr>
       <th>method-></th>
       <th colspan="2">CNNSpot<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_CNN-Generated_Images_Are_Surprisingly_Easy_to_Spot..._for_Now_CVPR_2020_paper.html">[1]</a></th>
-      <th colspan="2">DCT<a href="">[2]</a></th>
+      <th colspan="2">DCT<a href="http://proceedings.mlr.press/v119/frank20a">[2]</a></th>
       <th colspan="2">Fusing<a href="https://ieeexplore.ieee.org/abstract/document/9897820">[3]</a></th>
       <th colspan="2">Gram<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Liu_Global_Texture_Enhancement_for_Fake_Face_Detection_in_the_Wild_CVPR_2020_paper.html">[4]</a></th>
       <th colspan="2">Grad<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.html">[5]</a></th>
@@ -859,7 +869,7 @@
     <tr>
       <th>method-></th>
       <th colspan="2">CNNSpot<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_CNN-Generated_Images_Are_Surprisingly_Easy_to_Spot..._for_Now_CVPR_2020_paper.html">[1]</a></th>
-      <th colspan="2">DCT<a href="">[2]</a></th>
+      <th colspan="2">DCT<a href="http://proceedings.mlr.press/v119/frank20a">[2]</a></th>
       <th colspan="2">Fusing<a href="https://ieeexplore.ieee.org/abstract/document/9897820">[3]</a></th>
       <th colspan="2">Gram<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Liu_Global_Texture_Enhancement_for_Fake_Face_Detection_in_the_Wild_CVPR_2020_paper.html">[4]</a></th>
       <th colspan="2">Grad<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.html">[5]</a></th>
@@ -1212,76 +1222,490 @@
       </tr>
   </tbody>
 </table>
+<table id="table4" class="mytable">
+  <tbody>
+    <tr>
+      <th>method-></th>
+      <th colspan="2">CNNSpot<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_CNN-Generated_Images_Are_Surprisingly_Easy_to_Spot..._for_Now_CVPR_2020_paper.html">[1]</a></th>
+      <th colspan="2">DCT<a href="http://proceedings.mlr.press/v119/frank20a">[2]</a></th>
+      <th colspan="2">Fusing<a href="https://ieeexplore.ieee.org/abstract/document/9897820">[3]</a></th>
+      <th colspan="2">Gram<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Liu_Global_Texture_Enhancement_for_Fake_Face_Detection_in_the_Wild_CVPR_2020_paper.html">[4]</a></th>
+      <th colspan="2">Grad<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.html">[5]</a></th>
+      <th colspan="2">LNP<a href="https://link.springer.com/chapter/10.1007/978-3-031-19781-9_6">[6]</a></th>
+    </tr>
+      <tr>
+          <td>testset</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+          <td>accuracy</td>
+          <td>avg precision</td>
+      </tr>
+      <tr>
+          <td>progan</td>
+          <td>88.00 </td>
+          <td>0.99 </td>
+          <td>60.85 </td>
+          <td>0.82 </td>
+          <td>50.00 </td>
+          <td>0.51 </td>
+          <td>88.30 </td>
+          <td>0.99 </td>
+          <td>81.46 </td>
+          <td>0.97 </td>
+          <td>71.50 </td>
+          <td>0.92 </td>
+      </tr>
+      <tr>
+          <td>stylegan</td>
+          <td>64.46 </td>
+          <td>0.91 </td>
+          <td>61.81 </td>
+          <td>0.72 </td>
+          <td>50.00 </td>
+          <td>0.48 </td>
+          <td>67.69 </td>
+          <td>0.90 </td>
+          <td>71.32 </td>
+          <td>0.92 </td>
+          <td>69.19 </td>
+          <td>0.94 </td>
+      </tr>
+      <tr>
+          <td>biggan</td>
+          <td>52.02 </td>
+          <td>0.61 </td>
+          <td>52.70 </td>
+          <td>0.58 </td>
+          <td>50.00 </td>
+          <td>0.51 </td>
+          <td>52.20 </td>
+          <td>0.61 </td>
+          <td>58.23 </td>
+          <td>0.64 </td>
+          <td>61.60 </td>
+          <td>0.74 </td>
+      </tr>
+      <tr>
+          <td>cyclegan</td>
+          <td>60.83 </td>
+          <td>0.77 </td>
+          <td>48.75 </td>
+          <td>0.54 </td>
+          <td>50.00 </td>
+          <td>0.51 </td>
+          <td>67.41 </td>
+          <td>0.83 </td>
+          <td>52.42 </td>
+          <td>0.58 </td>
+          <td>67.71 </td>
+          <td>0.78 </td>
+      </tr>
+      <tr>
+          <td>stargan</td>
+          <td>64.58 </td>
+          <td>0.93 </td>
+          <td>51.68 </td>
+          <td>0.73 </td>
+          <td>50.00 </td>
+          <td>0.53 </td>
+          <td>77.89 </td>
+          <td>0.95 </td>
+          <td>58.38 </td>
+          <td>0.97 </td>
+          <td>56.08 </td>
+          <td>0.99 </td>
+      </tr>
+      <tr>
+          <td>gaugan</td>
+          <td>65.61 </td>
+          <td>0.85 </td>
+          <td>50.55 </td>
+          <td>0.55 </td>
+          <td>50.00 </td>
+          <td>0.50 </td>
+          <td>63.97 </td>
+          <td>0.83 </td>
+          <td>55.04 </td>
+          <td>0.58 </td>
+          <td>49.73 </td>
+          <td>0.50 </td>
+      </tr>
+      <tr>
+          <td>deepfake</td>
+          <td>50.53 </td>
+          <td>0.63 </td>
+          <td>67.35 </td>
+          <td>0.75 </td>
+          <td>50.08 </td>
+          <td>0.50 </td>
+          <td>53.14 </td>
+          <td>0.63 </td>
+          <td>50.10 </td>
+          <td>0.58 </td>
+          <td>51.03 </td>
+          <td>0.83 </td>
+      </tr>
+      <tr>
+          <td>stylegan2</td>
+          <td>65.69 </td>
+          <td>0.92 </td>
+          <td>63.50 </td>
+          <td>0.70 </td>
+          <td>50.00 </td>
+          <td>0.46 </td>
+          <td>69.40 </td>
+          <td>0.91 </td>
+          <td>69.93 </td>
+          <td>0.94 </td>
+          <td>74.46 </td>
+          <td>0.96 </td>
+      </tr>
+      <tr>
+          <td>whichfaceisreal</td>
+          <td>76.50 </td>
+          <td>0.85 </td>
+          <td>49.70 </td>
+          <td>0.49 </td>
+          <td>50.00 </td>
+          <td>0.45 </td>
+          <td>79.80 </td>
+          <td>0.86 </td>
+          <td>56.70 </td>
+          <td>0.61 </td>
+          <td>55.05 </td>
+          <td>0.68 </td>
+      </tr>
+      <tr>
+          <td>ADM</td>
+          <td>50.09 </td>
+          <td>0.62 </td>
+          <td>15.68 </td>
+          <td>0.33 </td>
+          <td>49.98 </td>
+          <td>0.34 </td>
+          <td>49.38 </td>
+          <td>0.57 </td>
+          <td>55.89 </td>
+          <td>0.59 </td>
+          <td>53.97 </td>
+          <td>0.60 </td>
+      </tr>
+      <tr>
+          <td>BigGAN</td>
+          <td>48.08 </td>
+          <td>0.65 </td>
+          <td>10.63 </td>
+          <td>0.33 </td>
+          <td>49.94 </td>
+          <td>0.44 </td>
+          <td>48.41 </td>
+          <td>0.63 </td>
+          <td>63.09 </td>
+          <td>0.70 </td>
+          <td>45.71 </td>
+          <td>0.59 </td>
+      </tr>
+      <tr>
+          <td>Glide</td>
+          <td>50.21 </td>
+          <td>0.61 </td>
+          <td>17.76 </td>
+          <td>0.33 </td>
+          <td>49.94 </td>
+          <td>0.40 </td>
+          <td>48.87 </td>
+          <td>0.56 </td>
+          <td>58.52 </td>
+          <td>0.66 </td>
+          <td>48.52 </td>
+          <td>0.47 </td>
+      </tr>
+      <tr>
+          <td>Midjourney</td>
+          <td>51.92 </td>
+          <td>0.54 </td>
+          <td>16.03 </td>
+          <td>0.32 </td>
+          <td>50.35 </td>
+          <td>0.71 </td>
+          <td>51.47 </td>
+          <td>0.55 </td>
+          <td>62.26 </td>
+          <td>0.68 </td>
+          <td>54.00 </td>
+          <td>0.55 </td>
+      </tr>
+      <tr>
+          <td>stable_diffusion_v_1_4</td>
+          <td>51.42 </td>
+          <td>0.55 </td>
+          <td>15.18 </td>
+          <td>0.32 </td>
+          <td>49.93 </td>
+          <td>0.39 </td>
+          <td>50.98 </td>
+          <td>0.54 </td>
+          <td>59.24 </td>
+          <td>0.63 </td>
+          <td>55.25 </td>
+          <td>0.59 </td>
+      </tr>
+      <tr>
+          <td>stable_diffusion_v_1_5</td>
+          <td>51.66 </td>
+          <td>0.56 </td>
+          <td>14.91 </td>
+          <td>0.32 </td>
+          <td>49.94 </td>
+          <td>0.39 </td>
+          <td>50.76 </td>
+          <td>0.54 </td>
+          <td>58.82 </td>
+          <td>0.63 </td>
+          <td>55.15 </td>
+          <td>0.59 </td>
+      </tr>
+      <tr>
+          <td>VQDM</td>
+          <td>50.24 </td>
+          <td>0.59 </td>
+          <td>17.01 </td>
+          <td>0.33 </td>
+          <td>49.96 </td>
+          <td>0.40 </td>
+          <td>49.48 </td>
+          <td>0.56 </td>
+          <td>57.96 </td>
+          <td>0.63 </td>
+          <td>46.14 </td>
+          <td>0.48 </td>
+      </tr>
+      <tr>
+          <td>wukong</td>
+          <td>50.31 </td>
+          <td>0.52 </td>
+          <td>16.66 </td>
+          <td>0.32 </td>
+          <td>49.97 </td>
+          <td>0.40 </td>
+          <td>49.92 </td>
+          <td>0.50 </td>
+          <td>56.65 </td>
+          <td>0.61 </td>
+          <td>57.58 </td>
+          <td>0.62 </td>
+      </tr>
+      <tr>
+          <td>COCO-LD</td>
+          <td>47.88 </td>
+          <td>0.54 </td>
+          <td>19.55 </td>
+          <td>0.35 </td>
+          <td>50.00 </td>
+          <td>0.44 </td>
+          <td>47.90 </td>
+          <td>0.51 </td>
+          <td>58.25 </td>
+          <td>0.63 </td>
+          <td>36.68 </td>
+          <td>0.37 </td>
+      </tr>
+      <tr>
+          <td>COCO-SD1v5</td>
+          <td>50.88 </td>
+          <td>0.55 </td>
+          <td>20.80 </td>
+          <td>0.32 </td>
+          <td>49.98 </td>
+          <td>0.43 </td>
+          <td>51.65 </td>
+          <td>0.56 </td>
+          <td>57.30 </td>
+          <td>0.61 </td>
+          <td>46.05 </td>
+          <td>0.44 </td>
+      </tr>
+      <tr>
+          <td>DALLE2</td>
+          <td>48.00 </td>
+          <td>0.55 </td>
+          <td>20.60 </td>
+          <td>0.35 </td>
+          <td>49.95 </td>
+          <td>0.45 </td>
+          <td>47.30 </td>
+          <td>0.51 </td>
+          <td>60.95 </td>
+          <td>0.67 </td>
+          <td>45.30 </td>
+          <td>0.48 </td>
+      </tr>
+      <tr>
+          <td>DDPM</td>
+          <td>50.28 </td>
+          <td>0.66 </td>
+          <td>52.22 </td>
+          <td>0.51 </td>
+          <td>50.00 </td>
+          <td>0.37 </td>
+          <td>50.43 </td>
+          <td>0.61 </td>
+          <td>50.77 </td>
+          <td>0.75 </td>
+          <td>50.13 </td>
+          <td>0.72 </td>
+      </tr>
+      <tr>
+          <td>Average</td>
+          <td>56.63 </td>
+          <td>0.69 </td>
+          <td>35.42 </td>
+          <td>0.48 </td>
+          <td>50.00 </td>
+          <td>0.46 </td>
+          <td>57.92 </td>
+          <td>0.67 </td>
+          <td>59.68 </td>
+          <td>0.69 </td>
+          <td>54.80 </td>
+          <td>0.66 </td>
+      </tr>
+  </tbody>
+</table>
 </body>
 
 <script>
   var tab1 = document.getElementById("tab1");
   var tab2 = document.getElementById("tab2");
   var tab3 = document.getElementById("tab3");
+  var tab4 = document.getElementById("tab4");
 
   var chart1 = document.getElementById("chart_container1");
   var chart2 = document.getElementById("chart_container2");
   var chart3 = document.getElementById("chart_container3");
+  var chart4 = document.getElementById("chart_container4");
 
   var button1 = document.getElementById("selectall1");
   var button2 = document.getElementById("selectall2");
   var button3 = document.getElementById("selectall3");
+  var button4 = document.getElementById("selectall4");
 
   var table1 = document.getElementById("table1");
   var table2 = document.getElementById("table2");
   var table3 = document.getElementById("table3");
+  var table4 = document.getElementById("table4");
 
   // table1.style.display = "flex";
   chart2.style.display = "none";
   button2.style.display = "none";
   table2.style.display = "none";
+
   chart3.style.display = "none";
   button3.style.display = "none";
   table3.style.display = "none";
+
+  chart4.style.display = "none";
+  button4.style.display = "none";
+  table4.style.display = "none";
   
   // 点击tab1时显示表格1，隐藏表格2
   tab1.onclick = function() {
-    tab2.classList.remove("current")
-    tab3.classList.remove("current")
+    tab2.classList.remove("current");
+    tab3.classList.remove("current");
+    tab4.classList.remove("current");
     tab1.classList.add("current");
+
     chart1.style.display = "flex";
     table1.style.display = "table";
     button1.style.display = "block";
+
     chart2.style.display = "none";
     button2.style.display = "none";
     table2.style.display = "none";
+
     chart3.style.display = "none";
     button3.style.display = "none";
     table3.style.display = "none";
+
+    chart4.style.display = "none";
+    button4.style.display = "none";
+    table4.style.display = "none";
   };
   // 点击tab2时显示表格2，隐藏表格1
   tab2.onclick = function() {
-    tab1.classList.remove("current")
-    tab3.classList.remove("current")
+    tab1.classList.remove("current");
+    tab3.classList.remove("current");
+    tab4.classList.remove("current");
     tab2.classList.add("current");
+    
+
     chart1.style.display = "none";
     button1.style.display = "none";
     table1.style.display = "none";
+
     chart2.style.display = "flex";
     button2.style.display = "block";
     table2.style.display = "table";
+
     chart3.style.display = "none";
     button3.style.display = "none";
     table3.style.display = "none";
+
+    chart4.style.display = "none";
+    button4.style.display = "none";
+    table4.style.display = "none";
   };
   tab3.onclick = function() {
-    tab1.classList.remove("current")
-    tab2.classList.remove("current")
+    tab1.classList.remove("current");
+    tab2.classList.remove("current");
+    tab4.classList.remove("current");
     tab3.classList.add("current");
+    
     chart1.style.display = "none";
     table1.style.display = "none";
     button1.style.display = "none";
+
     chart3.style.display = "flex";
     button3.style.display = "block";
     table3.style.display = "table";
+
     chart2.style.display = "none";
     button2.style.display = "none";
     table2.style.display = "none";
+
+    chart4.style.display = "none";
+    button4.style.display = "none";
+    table4.style.display = "none";
+  };
+  tab4.onclick = function() {
+    tab1.classList.remove("current");
+    tab2.classList.remove("current");
+    tab3.classList.remove("current");
+    tab4.classList.add("current");
+
+    chart1.style.display = "none";
+    table1.style.display = "none";
+    button1.style.display = "none";
+
+    chart4.style.display = "flex";
+    button4.style.display = "block";
+    table4.style.display = "table";
+
+    chart2.style.display = "none";
+    button2.style.display = "none";
+    table2.style.display = "none";
+
+    chart3.style.display = "none";
+    button3.style.display = "none";
+    table3.style.display = "none";
   };
 </script>
 
@@ -1652,11 +2076,11 @@
           button2.innerHTML='hide all';
       }
       var obj = {};
-      for(var key in selectArr){
+      for(var key in selectArr2){
           console.log(key);
-          obj[selectArr[key]] = val;
+          obj[selectArr2[key]] = val;
       }    
-      obj[selectArr[0]] = true;
+      obj[selectArr2[0]] = true;
       console.log(obj);
       option2.legend.selected = obj;
       Chart2.setOption(option2);
@@ -1669,7 +2093,7 @@
 // 柱形图数据
   const data3 = {
     categories: ['CNNSpot','DCT','Fusing','Gram','Grad','LNP'],
-    values: [63.59 ,60.93 ,63.58,64.54 ,	70.12 ,60.56 , ]
+    values: [63.59 ,60.93 ,63.58,64.54 ,	70.12 ,60.56  ]
   };
   const sortedData3 = data3.values.map((value, index) => ({
         value: value,
@@ -1823,14 +2247,185 @@
           button3.innerHTML='hide all';
       }
       var obj = {};
-      for(var key in selectArr){
+      for(var key in selectArr3){
           console.log(key);
-          obj[selectArr[key]] = val;
+          obj[selectArr3[key]] = val;
       }    
-      obj[selectArr[0]] = true;
+      obj[selectArr3[0]] = true;
       console.log(obj);
       option3.legend.selected = obj;
       Chart3.setOption(option3);
+  };
+</script>
+
+<!-- chart4: resize 0.5 -->
+<script>
+  var chart4_rank = echarts.init(document.getElementById('chart4_rank'));
+// 柱形图数据
+  const data4 = {
+    categories: ['CNNSpot','DCT','Fusing','Gram','Grad','LNP'],
+    values: [56.63 ,35.42 ,50.00,57.92,59.68,54.80]
+  };
+  const sortedData4 = data4.values.map((value, index) => ({
+        value: value,
+        category: data4.categories[index]
+      })).sort((a, b) => a.value - b.value);
+
+// 柱形图配置项
+  const option4_rank = {
+    title: {
+      text: 'Average'
+    },
+    grid:{
+      left : 100
+    },
+    xAxis: {
+      type: 'value'
+    },
+    yAxis: {
+      type: 'category',
+      axisTick: {
+            alignWithLabel: true
+          },
+      data: sortedData4.map(item => item.category) // 使用排序后的数据作为纵坐标的标签
+    },
+    series: [{
+      type: 'bar',
+      label: {
+        show: true,
+        position: 'inside'
+      },
+      data: sortedData4.map(item => item.value), // 使用排序后的数据作为柱形图的数据
+      sort: 'ascending' // 按照数据大小升序排序
+    }]
+  };
+  // 渲染柱形图
+  chart4_rank.setOption(option4_rank);
+</script>
+
+<script type="text/javascript">
+  var Chart4 = echarts.init(document.getElementById('chart4'));
+  var option4 = {
+    title: {
+      text: 'AIGCDetect with Resize 0.5'
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross',
+        label: {
+          backgroundColor: '#6a7985'
+        }
+      }
+    },
+    legend: {
+      data: ['CNNSpot','DCT','Fusing','Gram','Grad','LNP'],
+      selected: {'DCT': false,'Fusing': false,'Gram': false,'Grad': false,'LNP': false} 
+    },
+    toolbox: {
+      feature: {
+        saveAsImage: {}
+      }
+    },
+   
+    xAxis: [
+      {
+        type: 'category',
+        axisLabel : {//坐标轴刻度标签的相关设置。
+                  interval:0,
+                  rotate:"45"
+              },
+        axisTick: {
+          alignWithLabel: true
+        },
+        data: ['progan','stylegan','biggan','cyclegan','stargan','gaugan','deepfake','stylegan2','whichfaceisreal','ADM','BigGAN','Glide','Midjourney','stable_diffusion_v_1_4','stable_diffusion_v_1_5','VQDM','wukong']
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value'
+      }
+    ],
+    series: [
+      {
+          name: 'CNNSpot',
+          type: 'bar',
+          emphasis: {
+          focus: 'series'
+          },
+          data: [88.00,64.46,52.02,60.83,64.58,65.61,50.53,65.69,76.50,50.09,48.08,50.21,51.92,51.42,51.66,50.24,50.31,47.88,50.88,48.00,50.28]
+      },
+      
+      {
+            name: 'DCT',
+            type: 'bar',
+            emphasis: {
+            focus: 'series'
+            },
+            data: [60.85,61.81,52.70,48.75,51.68,50.55,67.35,63.50,49.70,15.68,10.63,17.76,16.03,15.18,14.91,17.01,16.66,19.55,20.80,20.60,52.22]
+        },
+        
+        {
+            name: 'Fusing',
+            type: 'bar',
+            emphasis: {
+            focus: 'series'
+            },
+            data: [50.00,50.00,50.00,50.00,50.00,50.00,50.08,50.00,50.00,49.98,49.94,49.94,50.35,49.93,49.94,49.96,49.97,50.00,49.98,49.95,50.00]
+        },
+        
+        {
+            name: 'Gram',
+            type: 'bar',
+            emphasis: {
+            focus: 'series'
+            },
+            data: [88.30,67.69,52.20,67.41,77.89,63.97,53.14,69.40,79.80,49.38,48.41,48.87,51.47,50.98,50.76,49.48,49.92,47.90,51.65,47.30,50.43]
+        },
+        
+        {
+            name: 'Grad',
+            type: 'bar',
+            emphasis: {
+            focus: 'series'
+            },
+            data: [81.46,71.32,58.23,52.42,58.38,55.04,50.10,69.93,56.70,55.89,63.09,58.52,62.26,59.24,58.82,57.96,56.65,58.25,57.30,60.95,50.77]
+        },
+        
+        {
+            name: 'LNP',
+            type: 'bar',
+            emphasis: {
+            focus: 'series'
+            },
+            data: [71.50,69.19,61.60,67.71,56.08,49.73,51.03,74.46,55.05,53.97,45.71,48.52,54.00,55.25,55.15,46.14,57.58,36.68,46.05,45.30,50.13]
+        },
+    ]
+  };
+  Chart4.setOption(option4);
+  var selectArr4 = Chart4.getOption().legend[0].data;
+  var button4 = document.getElementById("selectall4");
+  console.log(selectArr4);
+  button4.onclick=function(){
+      var flag = button4.getAttribute('flag');
+      if(flag == 1){
+          var val = false;
+          button4.setAttribute('flag',0);
+          button4.innerHTML='show all';
+      }else{
+          var val = true;
+          button4.setAttribute('flag',1);
+          button4.innerHTML='hide all';
+      }
+      var obj = {};
+      for(var key in selectArr4){
+          console.log(key);
+          obj[selectArr4[key]] = val;
+      }    
+      obj[selectArr4[0]] = true;
+      console.log(obj);
+      option4.legend.selected = obj;
+      Chart4.setOption(option4);
   };
 </script>
 </html>
