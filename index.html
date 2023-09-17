@@ -1299,7 +1299,7 @@
 // 柱形图数据
   const data = {
     categories: ['CNNSpot','DCT','Fusing','Gram','Grad','LNP'],
-    values: [50.43,52.30,51.38,50.77,59.10,55.70]
+    values: [66.90,59.88,65.86 ,64.91 ,	75.11 ,	79.98]
   };
   const sortedData = data.values.map((value, index) => ({
         value: value,
@@ -1326,6 +1326,10 @@
     },
     series: [{
       type: 'bar',
+      label: {
+        show: true,
+        position: 'inside'
+      },
       data: sortedData.map(item => item.value), // 使用排序后的数据作为柱形图的数据
       sort: 'ascending' // 按照数据大小升序排序
     }]
@@ -1496,6 +1500,10 @@
     },
     series: [{
       type: 'bar',
+      label: {
+        show: true,
+        position: 'inside'
+      },
       data: sortedData2.map(item => item.value), // 使用排序后的数据作为柱形图的数据
       sort: 'ascending' // 按照数据大小升序排序
     }]
@@ -1688,6 +1696,10 @@
     },
     series: [{
       type: 'bar',
+      label: {
+        show: true,
+        position: 'inside'
+      },
       data: sortedData3.map(item => item.value), // 使用排序后的数据作为柱形图的数据
       sort: 'ascending' // 按照数据大小升序排序
     }]
