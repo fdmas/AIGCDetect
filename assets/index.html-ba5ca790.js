@@ -1,0 +1,12 @@
+import{_ as c,r as o,o as l,c as d,d as n,b as t,a as e,w as i,e as h}from"./app-a8c99419.js";const m={},u=t("p",null,"The quality of AI-generated images has been significantly boosted over the past years. It is not easy for humans to distinguish between real and fake images. Realistic fake images intensify concerns about the disinformation dissemination. To tackle this problem, various fake image detection approaches have been proposed. However, most detectors only evaluate their performance over partial generative models. It is important to build a benchmark to review existing detectors with comprehensive generative models. Since existing detectors are always trained over different training sets, an alternative goal of this benchmark is to evaluate the generalization of existing detectors with fair conditions. All detectors involved in this benchmark are trained over the same training set.",-1),f=t("a",{href:"mailto:nanzhong995@gmail.com"},"nanzhong995@gmail.com",-1),p=t("h2",{id:"news",tabindex:"-1"},[t("a",{class:"header-anchor",href:"#news","aria-hidden":"true"},"#"),e(" 🌟News")],-1),g=t("a",{href:"Awesome-AIGCDetection"},"Awesome-AIGCDetection",-1),_=t("br",null,null,-1),b={href:"https://github.com/Ekko-zn/AIGCDetectBenchmark",target:"_blank",rel:"noopener noreferrer"};function v(k,w){const r=o("RandomImage"),a=o("RouterLink"),s=o("ExternalLinkIcon");return l(),d("div",null,[n(r),u,t("p",null,[e("This benchmark will be continuously updated to track the latest advances in AI-generated image fields. The details of experimental setup and results can be found in "),n(a,{to:"/data/"},{default:i(()=>[e("Evaluation")]),_:1}),e(" and "),n(a,{to:"/Document.html"},{default:i(()=>[e("Doc")]),_:1}),e(". If you want to contribute your detection/generation method to this benchmark, please feel free to contact us ("),f,e(").")]),p,t("p",null,[e("[2024-01-02 🎆] Release the collection of AIGC-Detection papers published from 2020 onwards. "),g,_,e(" [2023-12-25 🎄] Release training code for 8 detection methods "),t("a",b,[e("code"),n(s)])]),h(` 
+::: card
+
+\`\`\`card
+title: Rich and Poor Texture Contrast： A Simple yet Effective Approach for AI-generated Image Detection
+desc: Author 1, Author 2, Author 3.
+logo: /RPTC.png
+link: https://github.com/fdmas/AIGCDetect
+color: rgba(253, 230, 138, 0.15)
+\`\`\`
+
+::: `)])}const I=c(m,[["render",v],["__file","index.html.vue"]]);export{I as default};
